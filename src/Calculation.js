@@ -44,18 +44,17 @@ class Calculation extends React.Component {
 	Equal = () => {
 		const {op, no1, no2, ans} = this.state;
 		if (op === '+')
-			this.setState({ ans: Number(no2 + no1)});
+			this.setState({ no1: Number(no2 + no1)});
 		else if (op === '-')
-			this.setState({ ans: Number(no2 - no1) });
+			this.setState({ no1: Number(no2 - no1) });
 		else if (op === '*') 
-			this.setState({ ans: Number(no2 * no1) });
+			this.setState({ no1: Number(no2 * no1) });
 		else if (op === '/')
-			this.setState({ ans: Number(no2 / no1) });
+			this.setState({ no1: Number(no2 / no1) });
 
-		setTimeout(() => {
-			this.setState({ no1: this.state.ans });
-		}, 50);
-
+		// setTimeout(() => {
+		// 	this.setState({ no1: this.state.ans });
+		// }, 50);
 
 	}
 
