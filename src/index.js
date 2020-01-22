@@ -5,7 +5,7 @@ import App from './App';
 import Calculation from './Calculation';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 
 ReactDOM.render(<Calculation />, document.getElementById('cal'));
 
