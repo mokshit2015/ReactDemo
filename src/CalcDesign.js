@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function CalcDesign(props) {
-	const { Calc,Equal,Operation,clear,plusminus } = props;
+	const { Calc,Equal,Operation,clear,plusminus,clearElement } = props;
 	return (
 		<div className="cal">
 			<div className="row">
@@ -33,7 +33,8 @@ function CalcDesign(props) {
 			<input type="button" className="col btn " value="/" onClick={Operation} />
 			</div>
 			<div className="row">
-				<button className="col-md-12 btn btn-primary" value="=" onClick={Equal}>=</button>
+				<button className="col-md-6 btn btn-primary" value="=" onClick={Equal}>=</button>
+				<button className="col-md-6 btn btn-primary" value="CE" onClick={clearElement}>CE</button>
 			</div>
 		</div>
 	);
